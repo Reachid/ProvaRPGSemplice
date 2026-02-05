@@ -5,7 +5,8 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        List<Personaggio> personaggi = CaricaPersonaggiDaFile(@"C:\Users\Principale\Desktop\ProvaRPG.txt");       
+
+        List<Personaggio> personaggi = CaricaPersonaggiDaFile(@"ProvaRPG.txt");       
         Board b = new Board(personaggi);
         b.Combatti(); 
     }
